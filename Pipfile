@@ -1,0 +1,25 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+django = "*"
+django-rest-framework = "*"
+django-cors-headers = "*"
+djoser = "*"
+pillow = "*"
+stripe = "*"
+autopep8 = "*"
+pylint = "*"
+pylint-django = "*"
+django-environ = "*"
+
+[dev-packages]
+
+[requires]
+python_version = "3.9"
+
+[scripts]
+dev-server =  "cd server && python manage.py runserver"
+dev-client = "cd client && yarn serve"
